@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* You can add global styles to this file, and also import other style files */
+/* Обнуление всех стилей */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: inherit;
+}
+
+.header__container {
+  display: flex;
+  min-height: 6.25rem;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
+}
+@media (max-width: 1200px) {
+  .nav-menu__list {
+    gap: calc(
+				10px + 36 *
+					((100vw - 320px) / 880)
+			);
+  }
+}
+.nav-menu__item:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+.nav-menu__link {
+  font-family: Manrope, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.0625rem;
+}
+.nav-menu__link:hover {
+  text-decoration: underline;
+}
+
+.decor {
+  background-color: #bdccff;
+  position: absolute;
+  top: 0;
+  left: 60.4%;
+  width: 100%;
+  min-height: 53rem;
+  z-index: -1;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+* {
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: calc(1170px + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0px auto;
+}
+
+@media (max-width: 1057px) {
+  [class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991px) {
+  [class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  [class*=__container] {
+    padding-left: calc(1rem);
+    padding-right: calc(1rem);
+    max-width: none;
+  }
+}
+button {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+.hiddenFlow {
+  overflow: hidden;
+}
